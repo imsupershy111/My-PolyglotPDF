@@ -1,0 +1,9 @@
+requests
+PyMuPDF
+langchain-openai
+langchain-core
+PyYAML
+python-dotenv
+Pillow
+pytesseract
+fonttools

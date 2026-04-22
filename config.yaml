@@ -1,0 +1,24 @@
+# Cấu hình luồng và chia nhỏ văn bản
+count: 2
+PPC: 20
+
+# Cấu hình API Dịch thuật
+translation_services:
+  OpenRouter:
+    api_url: "https://openrouter.ai/api/v1"
+    model_name: "openrouter/elephant-alpha"
+
+# Cấu hình OCR (Dành cho PDF dạng ảnh quét)
+ocr_services:
+  tesseract:
+    path: "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+
+# Thiết lập mặc định
+default_services:
+  ocr_model: false
+  Enable_translation: true
+  Translation_api: "OpenRouter"
+
+# System Prompt cho LLM
+translation_prompt:
+  system_prompt: "You are a professional translator. Translate from {original_lang} to {target_lang}. Return only the translation without explanations or notes."
